@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { Client, Collection, Intents, MessageEmbed, Message } = require('discord.js');
 const config = require('./config.json');
-const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_BANS", "GUILD_MEMBERS", "GUILD_WEBHOOKS"] }); 
+const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_BANS", "GUILD_MEMBERS", "GUILD_WEBHOOKS", "DIRECT_MESSAGES"] }); 
 client.commands = new Collection();
 client.login(config.token);
 
